@@ -11,13 +11,28 @@
 #         - then ends the program
 ################################################################################
 # Imports
-
+import random
 
 # Body
 
+guesscount = 0
+print('I have picked a number between 1 & 25. Can you guess what it is? You have 5 total guesses.')
 
+number = random.randint(1, 25)
 
+while guesscount < 5: 
+	guess = int(input())
+	guesscount += 1 
 
+	if guess == number:
+		print ('Good job! You guessed my number.')
+		break
+	if guess < number:
+		print ('Your number is too low. Try again.')
+	if guess > number:
+		print ('Your number is too high. Try again.')
+
+print('Sorry, game over. I was thinking of ' + str(number) + ".")
 ################################################################################
 def main():
 

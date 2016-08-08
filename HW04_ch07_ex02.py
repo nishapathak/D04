@@ -21,15 +21,19 @@
 
 ###############################################################################
 # Imports
-
-
+def eval_loop():
+	while True:
+		x = input('Tell me anything:' + " " )
+		if x == 'done':
+			break
+		print(eval(x))
 # Body
 
 
 ###############################################################################
 def main():
-    pass  # Remove this line and uncomment below once eval_loop is defined.
-    # eval_loop()
+    #pass  
+    eval_loop()
 
 if __name__ == '__main__':
     main()

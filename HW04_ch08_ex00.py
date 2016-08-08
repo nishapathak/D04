@@ -17,7 +17,12 @@
 
 ###############################################################################
 # Imports
-
+def count(s, x):
+    count = 0
+    for y in s:
+        if y == x:
+            count = count + 1
+    print(count)
 
 # Body
 
@@ -27,7 +32,8 @@ def main():
 
     # Remove print("Hello World!") and add several functions calls to count()
     # below, passing various strings and letters
-    print("Hello World!")
+ 
+    count('appleppphjbbjp', 'a')
 
 
 if __name__ == '__main__':
